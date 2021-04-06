@@ -23,7 +23,7 @@
 }
 
 .detalle {
-    margin: 20px;
+    margin: 30px;
     @include breakpoint-up(large){
         display: grid;
         grid-template-columns: 2fr 1fr;
@@ -32,17 +32,24 @@
     
 }
 .formulario {
-    padding: 0px 20px;
+    padding: 0px 30px;
 }
 .grey_box {
     padding: 10px;
     background-color: $grey-back;
+
+    & p {
+        font-size: 14px;
+    }
 }
 a button {
     text-align: center;
     @include breakpoint-up(large){
         width: 60%;
     }
+}
+.form-check {
+    margin: 30px 10px;
 }
 
 

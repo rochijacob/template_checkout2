@@ -162,7 +162,7 @@ body {
 }
 
 .detalle {
-  margin: 20px;
+  margin: 30px;
 }
 
 @media (min-width: 64em) {
@@ -174,12 +174,16 @@ body {
 }
 
 .formulario {
-  padding: 0px 20px;
+  padding: 0px 30px;
 }
 
 .grey_box {
   padding: 10px;
   background-color: #e6e6e7;
+}
+
+.grey_box p {
+  font-size: 14px;
 }
 
 a button {
@@ -190,6 +194,10 @@ a button {
   a button {
     width: 60%;
   }
+}
+
+.form-check {
+  margin: 30px 10px;
 }
 
 .w100 {
