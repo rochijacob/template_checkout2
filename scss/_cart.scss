@@ -1,0 +1,19 @@
+.cart {
+    display: none;
+    background-color: $grey-back;
+    @include breakpoint-up(large){
+        display: inline-block;
+    }
+}
+.resumen_orden {
+    margin: 20px 5px;
+    @include breakpoint-up(large){
+        display: none;
+    }
+}
+
+.tu_compra {
+    margin: 0 auto;
+    text-align: left;
+    text-decoration: none;
+}

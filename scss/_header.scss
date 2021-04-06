@@ -1,0 +1,48 @@
+#crumbs {
+    margin: 0px 20px;
+    & ul { 
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
+        font-size: 15px;
+        margin: 0;
+        padding: 10px;
+        @include breakpoint-up(large){
+            font-size: 17px;
+            width: max-content;
+        } 
+        & li {
+            list-style: none;
+            background-color: $crumbs-back;
+            padding: 10px;
+            text-align: center;
+            &:first-child {
+                border-radius: 10px 0px 0px 10px;
+            }
+            &:last-child {
+                border-radius: 0px 10px 10px 0px;
+            }
+            &.active_bread {
+                background-color: $asociate-blue;
+            }
+            &.active_bread a {
+                color: white;
+            }
+            & a {
+                text-decoration: none;
+                color: grey;
+                width: 100%;
+                display: block;
+            }
+        }
+    }
+
+}
+
+.logo {
+    width: 100%;
+    text-align: center;
+    @include breakpoint-up(large){
+        text-align: left;
+    }
+}

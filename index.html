@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informacion del socio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app/scss/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    
+</head>
+<body>
+  <div class="the_whole">
+    <div class="grid_item_1">
+
+        <nav>
+            <div class="logo">
+              <img src="images/logo_asociate.png" alt="" width="300px">
+            </div>
+            <div id="crumbs">
+                <ul>
+                  <li><a href="#1">Elegi tu club</a></li>
+                  <li class="active_bread"><a href="#2">Informacion del socio</a></li>
+                  <li><a href="#3">Pago</a></li>
+                  
+                </ul>
+            </div>
+        </nav>
+        <main>
+          <div class="resumen_orden">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                          <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                        </svg>
+                        <p class="tu_compra">Tu compra</p>
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                      <ul class="list-group mb-3">
+                          <li class="list-group-item d-flex justify-content-between lh-sm">
+                            <div>
+                              <h6 class="my-0">Plan Local Mensual</h6>
+                              <small class="text-muted">Entrenamiento en 1 sola sede</small>
+                            </div>
+                            <span>$1000</span>
+                          </li>
+                          
+                          <li class="list-group-item d-flex justify-content-between bg-light">
+                            <div class="text-success">
+                              <h6 class="my-0">Promo Lanzamiento</h6>
+                              <small class="text-muted">20% OFF adicional</small>
+                              <small>KQH700</small>
+                            </div>
+                            <span class="text-success">−$200</span>
+                          </li>
+                          <li class="list-group-item d-flex justify-content-between">
+                            <span>Total</span>
+                            <strong>$800</strong>
+                          </li>
+                        </ul>
+                
+                        <form class="card p-2">
+                          <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Promo code">
+                            <button type="submit" class="btn btn-secondary">Redeem</button>
+                          </div>
+                        </form>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+
+          <div class="detalle">
+            <h3>Informacion del socio</h3>
+            <div class="protected">
+              <h6>Tu tarjeta esta asegurada</h6>
+              <p>Tus datos estan protegidos por .... check</p>
+            </div>
+          </div>
+
+
+          <section class="row g-3 content fromulario">
+            <div class="col-sm-6">
+              <input type="text" class="form-control" id="firstName" placeholder="Nombre" value="" required>
+              <div class="invalid-feedback">
+                Debe introducir un nombre valido
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <input type="text" class="form-control" id="lastName" placeholder="Apellido" value="" required>
+              <div class="invalid-feedback">
+                Debe introducir un apellido valido
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <input type="number" class="form-control" id="dni" placeholder="DNI" value="" required>
+              <div class="invalid-feedback">
+                  Debe introducir un dni valido
+                </div>
+          </div>
+
+          <div class="col-sm-6">
+            <input type="email" class="form-control" id="email" placeholder="e-mail" required>
+            <div class="invalid-feedback">
+              Please enter a valid email address for shipping updates.
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+              <input type="date" class="form-control" id="b_date" placeholder="Fecha de nacimiento" value="" required>
+          </div>
+
+          <div class="col-sm-6">
+              <input type="number" class="form-control" id="cel" placeholder="Celular" value="" required>
+              <div class="invalid-feedback">
+                  Debe introducir un celular valido
+                </div>
+          </div>
+
+          <div class="col-12">
+            <input type="text" class="form-control" id="address" placeholder="Domicilio" required>
+            <div class="invalid-feedback">
+              Porfavor ingrese una direccion valida
+            </div>
+          </div>
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="save-info">
+            <label class="form-check-label specifics" for="save-info">Guardar informacion</label>
+          </div>
+
+
+          <div class="grey_box specifics">
+            <p>Al asociarte el 31 de Marzo, estarás abonando $3406 que corresponden a la suma de $106 por 1 un día de Marzo y $3.300 por el mes de Mayo.</p> 
+          </div>
+      
+
+
+          <hr class="my-4">
+
+          <a href="#"><button class="w-100 btn btn-primary btn-lg" type="submit">Continuar</button></a>
+          </section>
+
+        </main>
+  </div>
+  <div class="grid_item_2 cart">
+    <h3>Resumen de Orden</h3>
+  </div>
+
+
+
+
+
+  </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="form-validation.js"></script>
+    
+</body>
+</html>

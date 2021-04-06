@@ -1,0 +1,12 @@
+.detalle {
+    margin: 20px;
+    @include breakpoint-up(large){
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        align-items: center;    
+    }
+    
+}
+.form {
+    margin: 10px 20px;
+}

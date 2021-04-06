@@ -1,0 +1,10 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.the_whole {
+    @include breakpoint-up(large){
+        display: grid;
+        grid-template-columns: 3fr 1.5fr;
+    }
+}
