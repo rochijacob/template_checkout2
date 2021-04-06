@@ -1,3 +1,27 @@
+.protected {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    & svg {
+        margin-top: 7px;
+        justify-self: center;
+    }
+    &_text {
+        justify-self: center;
+        align-self: center;
+        padding: 3px;
+        display: grid;
+        grid-template-rows: 0.5fr 1fr;
+        & h6 {
+            font-size: 15px;
+            margin-bottom: 3px;
+        }
+        & p {
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+    }
+}
+
 .detalle {
     margin: 20px;
     @include breakpoint-up(large){
@@ -7,6 +31,24 @@
     }
     
 }
-.form {
-    margin: 10px 20px;
+.formulario {
+    padding: 0px 20px;
+}
+.grey_box {
+    padding: 10px;
+    background-color: $grey-back;
+}
+a button {
+    text-align: center;
+    @include breakpoint-up(large){
+        width: 60%;
+    }
+}
+
+
+.w100 {
+    width: 100%;
+    @include breakpoint-up(large){
+        width: max-content;
+    }
 }

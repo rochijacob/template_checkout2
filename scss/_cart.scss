@@ -1,6 +1,7 @@
 .cart {
     display: none;
     background-color: $grey-back;
+    padding: 40px 20px 10px 20px;
     @include breakpoint-up(large){
         display: inline-block;
     }
