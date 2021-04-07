@@ -1,9 +1,25 @@
-.cart {
+div .cart {
     display: none;
     background-color: $grey-back;
     padding: 40px 20px 10px 20px;
     @include breakpoint-up(large){
         display: inline-block;
+    }
+    &_item {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        &_info {
+            color: blue;
+        }
+        &_price {
+            color: cadetblue;
+        }
+        &:last-child {
+            padding-top: 40%;
+        }
+    }
+    &:last-child {
+        padding-top: 40px;
     }
 }
 .resumen_orden {

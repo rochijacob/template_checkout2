@@ -1,11 +1,34 @@
+/* change to #fafafa*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
 }
 
 @media (min-width: 64em) {
+  body {
+    background-color: lightblue !important;
+  }
+}
+
+@media (min-width: 64em) {
   .the_whole {
     display: grid;
-    grid-template-columns: 3fr 1.5fr;
+    grid-template-columns: 3fr 1.75fr;
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px 10px 10px 10px;
+    padding: 5px;
   }
 }
 
@@ -37,7 +60,7 @@ body {
 
 .crumbs.mobile ul li {
   list-style: none;
-  background-color: #e6e6e7;
+  background-color: #fafafa;
   padding: 10px;
   text-align: center;
 }
@@ -104,7 +127,7 @@ body {
 
 .crumbs.desktop ul li:last-child {
   border-radius: 0px 10px 10px 0px;
-  color: #e6e6e7;
+  color: #fafafa;
 }
 
 .crumbs.desktop ul li.active_bread {
@@ -136,6 +159,10 @@ body {
 .protected {
   display: grid;
   grid-template-columns: 1fr 4fr;
+  background-color: #e7e7e7;
+  border-radius: 7px;
+  box-shadow: 0 2.8px 2.2px rgba(185, 185, 185, 0.034), 0 6.7px 5.3px rgba(185, 185, 185, 0.034), 0 12.5px 10px rgba(185, 185, 185, 0.034), 0 22.3px 17.9px rgba(185, 185, 185, 0.034), 0 41.8px 33.4px rgba(185, 185, 185, 0.034), 0 100px 80px rgba(185, 185, 185, 0.034);
+  padding: 8px 0px;
 }
 
 .protected svg {
@@ -179,7 +206,8 @@ body {
 
 .grey_box {
   padding: 10px;
-  background-color: #e6e6e7;
+  margin: 20px;
+  background-color: #fafafa;
 }
 
 .grey_box p {
@@ -196,8 +224,24 @@ a button {
   }
 }
 
+@media (min-width: 64em) {
+  .button_grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 5px;
+    align-items: center;
+  }
+  .button_grid a {
+    justify-self: center;
+  }
+}
+
 .form-check {
   margin: 30px 10px;
+}
+
+.g-3, .gy-3 {
+  --bs-gutter-y: 1.25rem;
 }
 
 .w100 {
@@ -210,16 +254,37 @@ a button {
   }
 }
 
-.cart {
+div .cart {
   display: none;
-  background-color: #e6e6e7;
+  background-color: #fafafa;
   padding: 40px 20px 10px 20px;
 }
 
 @media (min-width: 64em) {
-  .cart {
+  div .cart {
     display: inline-block;
   }
+}
+
+div .cart_item {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+div .cart_item_info {
+  color: blue;
+}
+
+div .cart_item_price {
+  color: cadetblue;
+}
+
+div .cart_item:last-child {
+  padding-top: 40%;
+}
+
+div .cart:last-child {
+  padding-top: 40px;
 }
 
 .resumen_orden {

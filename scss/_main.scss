@@ -1,6 +1,15 @@
 .protected {
     display: grid;
     grid-template-columns: 1fr 4fr;
+    background-color: $white-sutil;
+    border-radius: 7px;
+    box-shadow: 0 2.8px 2.2px rgba(185, 185, 185, 0.034),
+    0 6.7px 5.3px rgba(185, 185, 185, 0.034),
+    0 12.5px 10px rgba(185, 185, 185, 0.034),
+    0 22.3px 17.9px rgba(185, 185, 185, 0.034),
+    0 41.8px 33.4px rgba(185, 185, 185, 0.034),
+    0 100px 80px rgba(185, 185, 185, 0.034);
+    padding: 8px 0px;
     & svg {
         margin-top: 7px;
         justify-self: center;
@@ -36,6 +45,7 @@
 }
 .grey_box {
     padding: 10px;
+    margin: 20px;
     background-color: $grey-back;
 
     & p {
@@ -48,11 +58,24 @@ a button {
         width: 60%;
     }
 }
+.button_grid {
+    @include breakpoint-up(large) {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 5px;
+        align-items: center;
+
+        & a {
+            justify-self: center;
+        }
+    }
+}
 .form-check {
     margin: 30px 10px;
 }
-
-
+.g-3, .gy-3 {
+    --bs-gutter-y: 1.25rem;
+}
 .w100 {
     width: 100%;
     @include breakpoint-up(large){
