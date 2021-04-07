@@ -288,7 +288,7 @@ div .cart:last-child {
 }
 
 .resumen_orden {
-  margin: 20px 5px;
+  margin: 20px 0px;
 }
 
 @media (min-width: 64em) {
@@ -434,8 +434,14 @@ div .cart:last-child {
 .qr p {
   font-size: 11px;
   text-align: center;
-  color: white;
   padding: 10px;
+}
+
+@media (min-width: 64em) {
+  .qr p {
+    color: white;
+    font-size: 12px;
+  }
 }
 
 .image-18 {

@@ -44,7 +44,7 @@ div .cart {
     font-size: 24px;
 }
 .resumen_orden {
-    margin: 20px 5px;
+    margin: 20px 0px;
     @include breakpoint-up(large){
         display: none;
     }

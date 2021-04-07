@@ -41,8 +41,11 @@
 .qr p {
     font-size: 11px;
     text-align: center;
-    color: white;
     padding: 10px;
+    @include breakpoint-up(large){
+        color: white;
+        font-size: 12px;
+    }
 }
 .image-18 {
     margin-top: 0!important;
