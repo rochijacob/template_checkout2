@@ -12,6 +12,7 @@ input[type=number] {
 
 body {
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
     @include breakpoint-up(large){
       background-color: lightblue!important;
     }
@@ -23,10 +24,10 @@ body {
         display: grid;
         grid-template-columns: 3fr 1.75fr;
         background-color: white;
-        margin: 10px;
+        margin: 1%;
         border-radius: 10px 10px 10px 10px;
         max-width: 1250px;
         margin: 0 auto;
-        margin-top: 10px;
+        margin-top: 1%;
     }
 }

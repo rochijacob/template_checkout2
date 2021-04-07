@@ -1,24 +1,27 @@
 div .cart {
     display: none;
-    background-color: $grey-back;
+    background-color: rgba(211, 211, 211, 0.5);
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
     padding: 40px 20px 10px 20px;
+    border-left: 1px solid rgba(128, 128, 128, 0.295);
     @include breakpoint-up(large){
         display: inline-block;
     }
     &_item {
         display: grid;
         grid-template-columns: 3fr 1fr;
+        padding: 10px 0px;
         &_info {
-            color: blue;
+            color: rgb(63, 63, 63);
         }
         &_price {
-            color: cadetblue;
+            color: rgb(56, 56, 56);
             justify-self: center;
         }
         &:last-child {
-            padding-top: 40%;
+            padding-top: 5%;
+            font-weight: bold;
         }
         & .total {
             align-self: center;
