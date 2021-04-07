@@ -3,10 +3,19 @@ div .cart {
     background-color: rgba(211, 211, 211, 0.5);
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
-    padding: 40px 20px 10px 20px;
+    padding: 40px 20px 20px 20px;
     border-left: 1px solid rgba(128, 128, 128, 0.295);
     @include breakpoint-up(large){
         display: inline-block;
+    }
+    &_image {
+        max-width: 80%;
+        margin: 0 auto;
+        border-radius: 10px;
+        padding: 15px 0px 0px;
+        & img {
+            border-radius: 10px;
+        }
     }
     &_item {
         display: grid;
@@ -20,7 +29,6 @@ div .cart {
             justify-self: center;
         }
         &:last-child {
-            padding-top: 5%;
             font-weight: bold;
         }
         & .total {
