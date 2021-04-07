@@ -1,6 +1,8 @@
 div .cart {
     display: none;
     background-color: $grey-back;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
     padding: 40px 20px 10px 20px;
     @include breakpoint-up(large){
         display: inline-block;
@@ -13,14 +15,22 @@ div .cart {
         }
         &_price {
             color: cadetblue;
+            justify-self: center;
         }
         &:last-child {
             padding-top: 40%;
+        }
+        & .total {
+            align-self: center;
         }
     }
     &:last-child {
         padding-top: 40px;
     }
+}
+
+.total_p {
+    font-size: 24px;
 }
 .resumen_orden {
     margin: 20px 5px;

@@ -28,7 +28,9 @@ body {
     background-color: white;
     margin: 10px;
     border-radius: 10px 10px 10px 10px;
-    padding: 5px;
+    max-width: 1250px;
+    margin: 0 auto;
+    margin-top: 10px;
   }
 }
 
@@ -60,7 +62,7 @@ body {
 
 .crumbs.mobile ul li {
   list-style: none;
-  background-color: #fafafa;
+  background-color: lightgrey;
   padding: 10px;
   text-align: center;
 }
@@ -127,7 +129,7 @@ body {
 
 .crumbs.desktop ul li:last-child {
   border-radius: 0px 10px 10px 0px;
-  color: #fafafa;
+  color: lightgrey;
 }
 
 .crumbs.desktop ul li.active_bread {
@@ -148,12 +150,18 @@ body {
 .logo {
   width: 100%;
   text-align: center;
+  margin-top: 3%;
 }
 
 @media (min-width: 64em) {
   .logo {
     text-align: left;
+    margin-top: 0;
   }
+}
+
+.logo img {
+  padding: 10px;
 }
 
 .protected {
@@ -162,7 +170,14 @@ body {
   background-color: #e7e7e7;
   border-radius: 7px;
   box-shadow: 0 2.8px 2.2px rgba(185, 185, 185, 0.034), 0 6.7px 5.3px rgba(185, 185, 185, 0.034), 0 12.5px 10px rgba(185, 185, 185, 0.034), 0 22.3px 17.9px rgba(185, 185, 185, 0.034), 0 41.8px 33.4px rgba(185, 185, 185, 0.034), 0 100px 80px rgba(185, 185, 185, 0.034);
-  padding: 8px 0px;
+  padding: 8px 5px;
+  margin: 0px 20px;
+}
+
+@media (min-width: 64em) {
+  .protected {
+    margin: 0;
+  }
 }
 
 .protected svg {
@@ -185,7 +200,7 @@ body {
 
 .protected_text p {
   font-size: 12px;
-  margin-bottom: 5px;
+  margin-bottom: 0;
 }
 
 .detalle {
@@ -204,14 +219,26 @@ body {
   padding: 0px 30px;
 }
 
+.formis {
+  margin-top: 0.75rem !important;
+}
+
+@media (min-width: 64em) {
+  .formis {
+    margin-top: 1rem;
+  }
+}
+
 .grey_box {
   padding: 10px;
   margin: 20px;
-  background-color: #fafafa;
+  background-color: lightgrey;
+  border-radius: 10px;
 }
 
 .grey_box p {
   font-size: 14px;
+  margin-bottom: 0;
 }
 
 a button {
@@ -222,6 +249,10 @@ a button {
   a button {
     width: 60%;
   }
+}
+
+.button_grid {
+  padding-bottom: 30px;
 }
 
 @media (min-width: 64em) {
@@ -254,9 +285,15 @@ a button {
   }
 }
 
+.form-control {
+  padding: 0.75rem 0.75rem !important;
+}
+
 div .cart {
   display: none;
-  background-color: #fafafa;
+  background-color: lightgrey;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
   padding: 40px 20px 10px 20px;
 }
 
@@ -277,14 +314,23 @@ div .cart_item_info {
 
 div .cart_item_price {
   color: cadetblue;
+  justify-self: center;
 }
 
 div .cart_item:last-child {
   padding-top: 40%;
 }
 
+div .cart_item .total {
+  align-self: center;
+}
+
 div .cart:last-child {
   padding-top: 40px;
+}
+
+.total_p {
+  font-size: 24px;
 }
 
 .resumen_orden {
@@ -301,5 +347,61 @@ div .cart:last-child {
   margin: 0 auto;
   text-align: left;
   text-decoration: none;
+}
+
+.nav_pasos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  margin: 10px;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  max-width: 160px;
+}
+
+.steps_text {
+  margin-left: 5px;
+  padding: 5px;
+  display: grid;
+  grid-template-rows: 0.5fr .5fr;
+}
+
+.steps_text_title {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.steps_text_specific {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+
+.ionito {
+  display: block;
+  background-color: lightgray;
+  color: grey;
+  padding: 10px;
+  border-radius: 50%;
+  align-self: center;
+  justify-self: center;
+}
+
+.active {
+  background-color: #0275d8;
+  color: white;
+}
+
+.mobile {
+  margin: 5%;
+}
+
+@media (min-width: 64em) {
+  .mobile {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

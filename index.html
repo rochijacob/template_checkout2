@@ -19,14 +19,37 @@
             <div class="logo">
               <img src="images/logo_asociate.png" alt="" width="300px">
             </div>
-            <div class="crumbs mobile">
+            <!-- <div class="crumbs mobile">
                 <ul>
                   <li><a href="#1">Elegi tu club</a></li>
                   <li class="active_bread"><a href="#2">Informacion del socio</a></li>
                   <li><a href="#3">Pago</a></li>
                   
                 </ul>
-            </div>
+            </div> -->
+            <div class="nav_pasos">
+              <div class="steps">
+                  <a class="iconito" style="align-self: center;"><ion-icon class="ionito" name="barbell-outline" size="medium"></ion-icon></a>
+                  <div class="steps_text">
+                      <p class="steps_text_title" style="margin: 0;">Paso 1</p>
+                      <small class="steps_text_specific">Elegi tu Plan</small>
+                  </div>
+              </div>
+              <div class="steps">
+                  <a class="iconito" style="align-self: center;"><ion-icon name="document-text-outline" class="ionito active"></ion-icon></a>
+                  <div class="steps_text">
+                      <p class="steps_text_title" style="margin: 0;">Paso 2</p>
+                      <small class="steps_text_specific">Llena tus datos</small>
+                  </div>
+              </div>
+              <div class="steps">
+                  <a class="iconito" style="align-self: center;"><ion-icon name="card-outline" class="ionito"></ion-icon></a>
+                  <div class="steps_text">
+                      <p class="steps_text_title" style="margin: 0;">Paso 3</p>
+                      <small class="steps_text_specific">Paga</small>
+                  </div>
+              </div>
+          </div>
         </nav>
         <main>
           <div class="resumen_orden">
@@ -67,8 +90,8 @@
                 
                         <form class="card p-2">
                           <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Promo code">
-                            <button type="submit" class="btn btn-secondary">Redeem</button>
+                            <input type="text" class="form-control" placeholder="Cupon de descuento">
+                            <button type="submit" class="btn btn-secondary">Aplicar</button>
                           </div>
                         </form>
                   </div>
@@ -82,8 +105,8 @@
           <div class="detalle">
             <h3>Informacion del socio</h3>
             <div class="protected">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shield-lock-fill" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm0 5a1.5 1.5 0 0 1 .5 2.915l.385 1.99a.5.5 0 0 1-.491.595h-.788a.5.5 0 0 1-.49-.595l.384-1.99A1.5 1.5 0 0 1 8 5z"/>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+                <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/>
               </svg>
               <div class="protected_text">
                 <h6>Tu tarjeta esta asegurada</h6>
@@ -95,52 +118,52 @@
 
 
           <section class="row g-3 content formulario">
-            <div class="col-sm-4">
+            <div class="col-sm-4 formis">
               <input type="text" class="form-control" id="firstName" placeholder="Nombre" value="" required>
               <div class="invalid-feedback">
                 Debe introducir un nombre valido
               </div>
             </div>
 
-            <div class="col-sm-4">
+            <div class="col-sm-4 formis">
               <input type="text" class="form-control" id="lastName" placeholder="Apellido" value="" required>
               <div class="invalid-feedback">
                 Debe introducir un apellido valido
               </div>
             </div>
 
-            <div class="col-sm-4">
+            <div class="col-sm-4 formis">
               <input type="number" class="form-control" id="dni" placeholder="DNI" value="" required>
               <div class="invalid-feedback">
                   Debe introducir un dni valido
                 </div>
           </div>
 
-          <div class="col-sm-4">
+          <div class="col-sm-4 formis">
             <input type="email" class="form-control" id="email" placeholder="e-mail" required>
             <div class="invalid-feedback">
               Please enter a valid email address for shipping updates.
             </div>
           </div>
 
-          <div class="col-sm-4">
+          <div class="col-sm-4 formis">
               <input type="date" class="form-control" id="b_date" placeholder="Fecha de nacimiento" value="" required>
           </div>
 
-          <div class="col-sm-4">
+          <div class="col-sm-4 formis">
               <input type="number" class="form-control" id="cel" placeholder="Celular" value="" required>
               <div class="invalid-feedback">
                   Debe introducir un celular valido
                 </div>
           </div>
 
-          <div class="col-12">
+          <div class="col-12 formis">
             <input type="text" class="form-control" id="address" placeholder="Domicilio" required>
             <div class="invalid-feedback">
               Porfavor ingrese una direccion valida
             </div>
           </div>
-          <section class="button_grid">
+          <section class="button_grid formis">
             <div class="form_text">
               <div class="form-check">
                 <input type="checkbox" class="form-check-input" id="save-info">
@@ -189,7 +212,7 @@
       <div class="cart_item_info total">
         <h6 class="my-0">Total</h6>
       </div>
-      <strong>$800</strong>
+      <strong class="cart_item_price total_p">$800</strong>
     </div>
   </div>
 
@@ -202,6 +225,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <script src="form-validation.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     
 </body>
 </html>

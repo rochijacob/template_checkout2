@@ -90,8 +90,13 @@
 .logo {
     width: 100%;
     text-align: center;
+    margin-top: 3%;
     @include breakpoint-up(large){
         text-align: left;
+        margin-top: 0;
+    }
+    & img {
+        padding: 10px;
     }
 }
 
