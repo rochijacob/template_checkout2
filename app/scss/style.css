@@ -105,13 +105,14 @@ h3 {
   background-color: #e7e7e7;
   border-radius: 7px;
   box-shadow: 0 2.8px 2.2px rgba(185, 185, 185, 0.034), 0 6.7px 5.3px rgba(185, 185, 185, 0.034), 0 12.5px 10px rgba(185, 185, 185, 0.034), 0 22.3px 17.9px rgba(185, 185, 185, 0.034), 0 41.8px 33.4px rgba(185, 185, 185, 0.034), 0 100px 80px rgba(185, 185, 185, 0.034);
-  padding: 8px 5px;
+  padding: 12px 5px;
   margin: 0px 20px;
 }
 
 @media (min-width: 64em) {
   .protected {
     margin: 0;
+    padding: 8px 5px;
   }
 }
 
