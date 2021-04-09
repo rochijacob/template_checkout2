@@ -4,7 +4,7 @@ h3 {
 .protected {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    background-color: $white-sutil;
+    background-color: #f6f6f6; //$whitesutil
     border-radius: 7px;
     box-shadow: 0 2.8px 2.2px rgba(185, 185, 185, 0.034),
     0 6.7px 5.3px rgba(185, 185, 185, 0.034),
