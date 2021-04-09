@@ -10,8 +10,12 @@
         gap: 8px;
         justify-items: center;
         align-items: center;
+        padding: 0 3%;
+        @include breakpoint-up(large){
+            padding: 0px;
+        }
     }
-    @include breakpoint-up(large){
+    @include breakpoint-up(medium){
         display: grid;
         grid-template-columns: 3fr 2fr;
         margin: 10px 30px;

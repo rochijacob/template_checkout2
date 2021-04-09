@@ -78,10 +78,21 @@ body {
   }
 }
 
+nav {
+  background: #a2daff;
+  background: linear-gradient(180deg, rgba(127, 204, 255, 0.308) 0%, white 100%);
+}
+
+@media (min-width: 64em) {
+  nav {
+    background: none;
+  }
+}
+
 .logo {
   width: 100%;
   text-align: center;
-  margin-top: 3%;
+  padding-top: 3%;
 }
 
 @media (min-width: 64em) {
@@ -444,9 +455,16 @@ div .cart:last-child {
   gap: 8px;
   justify-items: center;
   align-items: center;
+  padding: 0 3%;
 }
 
 @media (min-width: 64em) {
+  .payment_cards {
+    padding: 0px;
+  }
+}
+
+@media (min-width: 40em) {
   .payment {
     display: grid;
     grid-template-columns: 3fr 2fr;
