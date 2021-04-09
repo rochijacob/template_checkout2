@@ -108,7 +108,7 @@
                 <div class="payment">
                   <div class="payment_info">
                     <div class="grey_box">
-                      <p>Aca va un texto que aclara sobre el modo de pago y sus cuotas, etc.......</p>
+                      <p>Se te cobrará al dia de hoy la primera cuota y las cuotas mensuales se cobran en el día ….. del mes con la tarjeta de crédito ingresada a continuacion</p>
                     </div>
                   </div>
                   <div class="payment_cards">
@@ -121,7 +121,7 @@
                 <div class="row g-3 content formulario">
                     <div class="col-sm-6 formis">
                         <div class="input-group mb-3">
-                            <div class="input-group-prepend">
+                            <div class="input-group-prepend" data-bs-toggle="tooltip" data-bs-placement="top" title="Ingresar el nombre completo del titular de la tarjeta">
                               <span class="input-group-text" id="basic-addon1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
                                 <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
                               </svg></span>
@@ -131,7 +131,7 @@
                     </div>
                     <div class="col-sm-6 formis">
                         <div class="input-group mb-3">
-                            <div class="input-group-prepend">
+                            <div class="input-group-prepend" data-bs-toggle="tooltip" data-bs-placement="top" title="Ingresar los 8 numeros al frente de la tarjeta">
                               <span class="input-group-text" id="basic-addon1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card-2-front" viewBox="0 0 16 16">
                                 <path d="M14 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2z"/>
                                 <path d="M2 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5z"/>
@@ -153,7 +153,7 @@
                             <input type="tel" class="form-control" placeholder="Expiracion MM/YY" aria-label="Numero en la tarjeta" aria-describedby="basic-addon1">
                           </div>
                     </div>
-                    <div class="col-sm-3 formis">
+                    <div class="col-sm-3 col-8 formis">
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                               <span class="input-group-text" id="basic-addon1">
@@ -166,6 +166,19 @@
                             <input type="tel" class="form-control" placeholder="CVV/CVC" aria-label="Numero en la tarjeta" aria-describedby="basic-addon1">
                           </div>
                     </div>
+                    <div class="formis col-sm-3 col-4 ">
+                      <a data-bs-toggle="tooltip" data-bs-placement="top" title="Ingresar el codigo de seguridad al dorso de la tarjeta">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-question-circle-fill" viewBox="0 0 16 16">
+                          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
+                        </svg>
+                      </a>
+                    </div>
+                </div>
+                <div class="form_text formis">
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input check" id="save-info">
+                    <label class="form-check-label specifics" for="save-info">Acepto los terminos y concidiones del servicio y contrato del plan</label>
+                  </div>
                 </div>
                 <div class="pagar">
                     <a href="#" target="_blank"><button class="w-100 btn btn-primary btn-lg" type="submit">Pagar (800$)</button></a>
@@ -201,6 +214,7 @@
             </div>
             <div class="cart_image">
                 <img src="images/sportclub_al_rio.jpg" class="img-fluid" alt="...">
+                <p class="cart_image_text">Estas comprando en SportClub Al rio</p>
             </div>
             <hr class="my-4">
             <div class="cart_item">
@@ -234,7 +248,8 @@
     <footer class="my-5 pt-5 text-muted text-center text-small footer">
         <span></span>
         <div class="footer_logo">
-          <img src="images/logo_asociate_blanco.png" alt="" class="asociate">
+          <img src="images/logo_asociate_blanco.png" alt="" class="asociate desktop">
+          <img src="images/logo_asociate.png" alt="" class="asociate mobile">
         </div>
         <div class="qr list-inline">
               <a href="http://qr.afip.gob.ar/?qr=-Ka45__aMChbHmjsDXnKXA,," class="link-block-9 w-inline-block">
@@ -247,5 +262,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <script src="form-validation.js"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script>
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+      })
+    </script>
     <script src="https://kit.fontawesome.com/029d146e2e.js" crossorigin="anonymous"></script>
 </html>

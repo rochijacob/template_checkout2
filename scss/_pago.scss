@@ -1,7 +1,6 @@
 
 
 .payment {
-    padding: 10px 30px;
     margin-bottom: 20px;
     &_cards{
         width: 30%;
@@ -18,7 +17,7 @@
         align-items: center;
         justify-items: center;
         &_info {
-            padding: 0px 20px;
+            padding: 0px 10px;
         }
     }
 }
@@ -37,7 +36,9 @@
 
 
 .pagar {
-    width: 60%;
     margin: 0 auto;
     padding: 40px;
+    @include breakpoint-up(large){
+        width: 60%;
+    }
 }

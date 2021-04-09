@@ -71,7 +71,7 @@ h3 {
 }
 .grey_box {
     padding: 10px;
-    margin: 20px;
+    margin: 30px 10px;
     background-color: $white-sutil; 
     box-shadow: 0 2.8px 2.2px rgba(185, 185, 185, 0.034),
     0 6.7px 5.3px rgba(185, 185, 185, 0.034),
@@ -81,8 +81,14 @@ h3 {
     0 100px 80px rgba(185, 185, 185, 0.034); 
     border-radius: 10px; 
     & p {
-        font-size: 14px;
+        font-size: 16px;
         margin-bottom: 0;
+    }
+    @include breakpoint-up(large){
+        margin: 20px;
+        & p {
+            font-size: 14px;
+        }
     }
 }
 a button {
@@ -105,9 +111,6 @@ a button {
     }
 }
 .form-check {
-    margin: 25px 10px;
-}
-.form-check-2 {
     margin: 10px 10px;
 }
 .g-3, .gy-3 {
@@ -120,13 +123,19 @@ a button {
     }
 }
 .form-control {
-    padding: .65rem 0.75rem!important;
+    padding: .75rem 0.75rem!important;
 }
 
 .input-group-text {
-    padding: 1rem 0.75rem!important;
+    padding: 1.25rem 1rem!important;
 }
 
 .specifics {
-    font-size: 16px;
+    font-size: 15px;
+    @include breakpoint-up(large) {
+        font-size: 16px;
+    }
+}
+.form_text {
+    margin: 0px 30px;
 }
