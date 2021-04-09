@@ -437,18 +437,19 @@ div .cart:last-child {
 }
 
 .payment_cards {
-  width: 30%;
+  width: 100%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
   gap: 8px;
   justify-items: center;
+  align-items: center;
 }
 
 @media (min-width: 64em) {
   .payment {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 2fr;
     margin: 10px 30px;
     align-items: center;
     justify-items: center;
