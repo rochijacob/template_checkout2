@@ -40,14 +40,25 @@ h3 {
 }
 
 .detalle {
-    margin: 10px 30px 30px;
     @include breakpoint-up(large){
         display: grid;
         grid-template-columns: 2fr 1fr;
         align-items: center;    
+    }
+}
+
+.general {
+    margin: 10px 30px 30px;
+    @include breakpoint-up(large){
         margin: 10px 30px 50px;
     }
 }
+
+.pago {
+    margin: 10px 30px 20px;
+}
+
+
 .formulario {
     padding: 0px 30px;
 }
@@ -94,7 +105,10 @@ a button {
     }
 }
 .form-check {
-    margin: 30px 10px;
+    margin: 25px 10px;
+}
+.form-check-2 {
+    margin: 10px 10px;
 }
 .g-3, .gy-3 {
     --bs-gutter-y: 1.25rem;
@@ -111,4 +125,8 @@ a button {
 
 .input-group-text {
     padding: 1rem 0.75rem!important;
+}
+
+.specifics {
+    font-size: 16px;
 }
