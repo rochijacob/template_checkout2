@@ -9,6 +9,9 @@
         justify-self: center;
         align-self: center;
     }
+    @include breakpoint-up(medium){
+        grid-template-columns: 0fr 0.5fr 1fr;
+    }
     @include breakpoint-up(large) {
         grid-template-columns: 1fr 1fr 1fr;
         gap: 0px;
@@ -28,7 +31,7 @@
     justify-items: center;
     align-items: center;
     @include breakpoint-up(medium) {
-        grid-template-columns: 0.75fr 1fr;
+        grid-template-columns: 0.3fr 1fr;
         width: 90%;
         margin: 0 auto;
         padding: 10px 0px;
