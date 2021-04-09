@@ -376,7 +376,7 @@ div .cart:last-child {
 
 .nav_pasos {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 0.8125fr;
 }
 
 .steps {
@@ -423,12 +423,19 @@ div .cart:last-child {
 }
 
 .mobile {
-  margin: 5%;
+  margin: 4%;
+}
+
+@media (min-width: 40em) {
+  .mobile {
+    margin: 0 20%;
+  }
 }
 
 @media (min-width: 64em) {
   .mobile {
     display: none;
+    margin: 5%;
   }
 }
 
@@ -444,7 +451,7 @@ div .cart:last-child {
 }
 
 .payment {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .payment_cards {
@@ -461,6 +468,13 @@ div .cart:last-child {
 @media (min-width: 64em) {
   .payment_cards {
     padding: 0px;
+  }
+}
+
+@media (min-width: 40em) {
+  .payment {
+    margin-bottom: 40px;
+    padding: 0 4%;
   }
 }
 
@@ -539,11 +553,17 @@ div .cart:last-child {
 
 @media (min-width: 40em) {
   .qr {
-    grid-template-columns: 0.3fr 1fr;
+    grid-template-columns: 0.75fr 1fr;
     width: 90%;
     margin: 0 auto;
     padding: 10px 0px;
     max-width: 300px;
+  }
+}
+
+@media (min-width: 64em) {
+  .qr {
+    grid-template-columns: 0.3fr 1fr;
   }
 }
 
