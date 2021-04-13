@@ -28,7 +28,7 @@
                   
                 </ul>
             </div> -->
-            <div class="nav_pasos mobile">
+            <div class="nav_pasos mobile" >
               <div class="steps">
                   <a class="iconito" style="align-self: center;"><ion-icon class="ionito" name="barbell-outline" size="medium"></ion-icon></a>
                   <div class="steps_text">
@@ -37,14 +37,14 @@
                   </div>
               </div>
               <div class="steps">
-                  <a class="iconito" style="align-self: center;"><ion-icon name="document-text-outline" class="ionito active"></ion-icon></a>
+                  <a class="iconito" style="align-self: center;" href="index.html"><ion-icon name="document-text-outline" class="ionito active"></ion-icon></a>
                   <div class="steps_text">
                       <p class="steps_text_title" style="margin: 0;">Paso 2</p>
                       <small class="steps_text_specific">Llena tus datos</small>
                   </div>
               </div>
               <div class="steps">
-                  <a class="iconito" style="align-self: center;"><ion-icon name="card-outline" class="ionito"></ion-icon></a>
+                  <a class="iconito" style="align-self: center;" href="cart.html" ><ion-icon name="card-outline" class="ionito"></ion-icon></a>
                   <div class="steps_text">
                       <p class="steps_text_title" style="margin: 0;">Paso 3</p>
                       <small class="steps_text_specific">Paga</small>
@@ -118,48 +118,48 @@
           </div>
 
 
-          <section class="row g-3 content formulario">
+          <form action="" class="row g-3 content formulario">
             <div class="col-sm-4 col-md-6 col-lg-4 formis">
-              <input type="text" class="form-control" id="firstName" placeholder="Nombre" value="" aria-label="Introducir primer nombre" required>
+              <input type="text" class="form-control" id="firstName" placeholder="Nombre" value="" aria-label="Introducir primer nombre" oninvalid="this.setCustomValidity('Porfavor introduzca un nombre valido')" required>
               <div class="invalid-feedback">
                 Debe introducir un nombre valido
               </div>
             </div>
 
             <div class="col-sm-4 col-md-6 col-lg-4  formis">
-              <input type="text" class="form-control" id="lastName" placeholder="Apellido" value="" aria-label="Introducir apellido" required>
+              <input type="text" class="form-control" id="lastName" placeholder="Apellido" value="" aria-label="Introducir apellido" oninvalid="this.setCustomValidity('Porfavor introduzca un apellido valido')" required>
               <div class="invalid-feedback">
                 Debe introducir un apellido valido
               </div>
             </div>
 
             <div class="col-sm-4 col-md-6 col-lg-4 formis">
-              <input type="number" class="form-control" id="dni" placeholder="DNI" value="" aria-label="Introducir Documento Nacional de identidad" required>
+              <input type="number" class="form-control" id="dni" placeholder="DNI" value="" aria-label="Introducir Documento Nacional de identidad" oninvalid="this.setCustomValidity('Porfavor introduzca un DNI valido')" required>
               <div class="invalid-feedback">
                   Debe introducir un dni valido
                 </div>
           </div>
 
           <div class="col-sm-4 col-md-6 col-lg-4 formis">
-            <input type="email" class="form-control" id="email" placeholder="e-mail" aria-label="Introducir e-mail" required>
+            <input type="email" class="form-control" id="email" placeholder="e-mail" aria-label="Introducir e-mail" oninvalid="this.setCustomValidity('Porfavor introduzca un e-mail valido')" required>
             <div class="invalid-feedback">
               Please enter a valid email address for shipping updates.
             </div>
           </div>
 
           <div class="col-sm-4 col-md-6 col-lg-4 formis">
-              <input type="date" class="form-control" id="b_date" placeholder="Fecha de nacimiento" value="" aria-label="Introducir fecha de nacimiento" required>
+              <input type="date" class="form-control" id="b_date" placeholder="Fecha de nacimiento" value="" aria-label="Introducir fecha de nacimiento" oninvalid="this.setCustomValidity('Porfavor introduzca su fecha de nacimiento')" required>
           </div>
 
           <div class="col-sm-4 col-md-6 col-lg-4 formis">
-              <input type="number" class="form-control" id="cel" placeholder="Celular" value="" aria-label="Introducir numero de celular" required>
+              <input type="number" class="form-control" id="cel" placeholder="Celular" value="" aria-label="Introducir numero de celular" oninvalid="this.setCustomValidity('Porfavor introduzca un celular')" required>
               <div class="invalid-feedback">
                   Debe introducir un celular valido
                 </div>
           </div>
 
           <div class="col-12 formis">
-            <input type="text" class="form-control" id="address" placeholder="Domicilio" aria-label="Introducir domicilio" required>
+            <input type="text" class="form-control" id="address" placeholder="Domicilio" aria-label="Introducir domicilio" oninvalid="this.setCustomValidity('Porfavor introduzca un domicilio valido')"required>
             <div class="invalid-feedback">
               Porfavor ingrese una direccion valida
             </div>
@@ -178,8 +178,8 @@
             <a href="cart.html"><button class="w100 btn btn-primary btn-lg" type="submit">Continuar</button></a>
           </section>
 
-          
-          </section>
+        </form>
+        
 
         </main>
   </div>
@@ -194,14 +194,14 @@
           </div>
       </div>
       <div class="steps">
-          <a class="iconito" style="align-self: center;"><ion-icon name="document-text-outline" class="ionito active"></ion-icon></a>
+          <a class="iconito" style="align-self: center;" href="index.html"><ion-icon name="document-text-outline" class="ionito active"></ion-icon></a>
           <div class="steps_text">
               <p class="steps_text_title" style="margin: 0;">Paso 2</p>
               <small class="steps_text_specific">Llena tus datos</small>
           </div>
       </div>
       <div class="steps">
-          <a class="iconito" style="align-self: center;"><ion-icon name="card-outline" class="ionito"></ion-icon></a>
+          <a class="iconito" style="align-self: center;" href="cart.html"><ion-icon name="card-outline" class="ionito"></ion-icon></a>
           <div class="steps_text">
               <p class="steps_text_title" style="margin: 0;">Paso 3</p>
               <small class="steps_text_specific">Paga</small>
@@ -242,7 +242,7 @@
 
 
   </div>
-  <footer class="pt-5 text-muted text-center text-small footer">
+  <footer class="pt-1 text-muted text-center text-small footer">
     <span></span>
     <div class="footer_logo">
       <img src="images/logo_asociate_blanco.png" alt="" class="asociate desktop">

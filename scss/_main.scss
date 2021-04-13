@@ -41,7 +41,7 @@ h3 {
 }
 
 .detalle {
-    @include breakpoint-up(large){
+    @include breakpoint-up(medium){
         display: grid;
         grid-template-columns: 2fr 1fr;
         align-items: center;    
